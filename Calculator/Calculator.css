@@ -1,0 +1,126 @@
+h1 {
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+#Calculator {
+    width: 26%;
+    height: 260px;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-family: 'Segoe UI';
+    padding: 10px;
+    min-width: 150px;
+    margin-left: 37%;
+    background-color: aliceblue;
+}
+
+#displayBox {
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    background-color: white;
+    overflow: auto;
+}
+
+#input {
+    width: 100%;
+    height: 20px;
+    cursor: text;
+    line-height: 15px;
+    padding: 0px 5px 5px 5px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+#display {
+    font-family: 'Segoe UI';
+    height: 15px;
+    font-size: 15px;
+    padding: 5px 5px 0px 5px;
+}
+
+.number,
+.operator {
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border: 1px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+.operator {
+    background-color: yellowgreen;
+}
+
+.number:hover,
+.operator:hover {
+    background-color: orange;
+    text-shadow: 2px 2px darkgrey;
+}
+
+.inputanimation {
+    animation: inputAnimation 2s;
+    -webkit-animation: inputAnimation 2s;
+}
+
+@keyframes inputAnimation {
+    0% {
+        background-color: skyblue;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@-webkit-keyframes inputAnimation {
+    0% {
+        background-color: skyblue;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.buttonClick {
+    animation: buttonClickAnimation 0.5s;
+    -webkit-animation: buttonClickAnimation 0.5s;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+        box-shadow: 0 0 0px skyblue;
+        background-color: grey;
+    }
+    50% {
+        box-shadow: 3px 3px 5px skyblue;
+        background-color: skyblue;
+    }
+    100% {
+        box-shadow: 0 0 0px skyblue;
+        background-color: grey;
+    }
+}
+
+@-webkit-keyframes buttonClickAnimation {
+    0% {
+        box-shadow: 0 0 0px skyblue;
+        background-color: grey;
+    }
+    50% {
+        box-shadow: 3px 3px 5px skyblue;
+        background-color: skyblue;
+    }
+    100% {
+        box-shadow: 0 0 0px skyblue;
+        background-color: grey;
+    }
+}
